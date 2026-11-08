@@ -10,6 +10,8 @@ A self-hosted Pinterest monitoring bot that watches a Pinterest profile's RSS fe
 
 # Configuration 
 
+
+
 ```ini
 [pinterest]
 username = <pinterest username to monitor>
@@ -36,11 +38,12 @@ console_level = INFO
 ```
 
 
-### Running
+# Running
 
 ```bash
 python main.py
 ```
+
 
 On startup you'll be asked:
 
@@ -48,21 +51,22 @@ On startup you'll be asked:
 2. **Enable streamer mode?** — `y` to mask the username as `@****` in all output.
 
 
-## Telegram commands 
+
+# Telegram commands 
 
 | Command   | Description                                               |
 |-----------|-----------------------------------------------------------|
 | `/status` | Live stats: interval, fail streak, pins, board sync state |
 | `/resync` | Force an immediate board-count check and queue gaps       |
-
 ---
+
 
 
 <img width="843" height="359" alt="Screenshot From 2026-11-08 11-30-18" src="https://github.com/user-attachments/assets/20d2e6da-bd20-4cf9-9023-bbddf6232670" />
 
 
 
-###Project Structure 
+## Project Structure 
 
 ```
 phs/
@@ -74,7 +78,7 @@ phs/
 └── media/              # cached pin images
 ```
 
-## No warranty - Private source code 
+### No warranty - Private source code 
 
 
 
